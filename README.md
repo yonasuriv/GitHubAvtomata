@@ -1,4 +1,4 @@
-Mainly designed for pentesters or people who use live isos.
+Mainly designed for **pentesters** or **people who use live isos**.
 
 # GitHub Avtomata
 Simply download the file: **GitHubAvtomata.sh** and run it on the terminal using:
