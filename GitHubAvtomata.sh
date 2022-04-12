@@ -222,10 +222,9 @@ done
   echo
 }
 
-# Script starts here
-
 clear
-# loader
+loader
 logo
 menu
 main_menu
+
