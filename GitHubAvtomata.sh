@@ -1,38 +1,5 @@
 #!/bin/bash
 
-logo () {
-echo "  ________.__  __     ___ ___      ___.        _____          __                         __          ";
-echo " /  _____/|__|/  |_  /   |   \ __ _\_ |__     /  _  \___  ___/  |_  ____   _____ _____ _/  |______   ";
-echo "/   \  ___|  \   __\/    ~    \  |  \ __ \   /  /_\  \  \/ /\   __\/  _ \ /     \\__  \\   __\__  \  ";
-echo "\    \_\  \  ||  |  \    Y    /  |  / \_\ \ /    |    \   /  |  | (  <_> )  Y Y  \/ __ \|  |  / __ \_";
-echo " \______  /__||__|   \___|_  /|____/|___  / \____|__  /\_/   |__|  \____/|__|_|  (____  /__| (____  /";
-echo "        \/                 \/           \/          \/                         \/     \/          \/ ";
-echo
-}
-
-loader () {
-clear
-echo 
-echo Script created by: Jonathan Di Rico
-echo https://yonasuriv.github.io/
-echo
-sleep 1
-echo Starting..
-sleep 2
-clear
-}
-
-credits () {
-clear
-echo 
-echo Script created by: Jonathan Di Rico
-echo https://yonasuriv.github.io/
-echo
-echo "Thanks you for using"
-logo
-echo
-}
-
 menu () {
 echo "\033[1;37;40m Menu \033[0m"
 echo
@@ -221,6 +188,34 @@ incorrect_selection_letter() {
     esac
 done
   echo
+}
+
+logo () {
+echo "  ________.__  __     ___ ___      ___.        _____          __                         __          ";
+echo " /  _____/|__|/  |_  /   |   \ __ _\_ |__     /  _  \___  ___/  |_  ____   _____ _____ _/  |______   ";
+echo "/   \  ___|  \   __\/    ~    \  |  \ __ \   /  /_\  \  \/ /\   __\/  _ \ /     \\__  \\   __\__  \  ";
+echo "\    \_\  \  ||  |  \    Y    /  |  / \_\ \ /    |    \   /  |  | (  <_> )  Y Y  \/ __ \|  |  / __ \_";
+echo " \______  /__||__|   \___|_  /|____/|___  / \____|__  /\_/   |__|  \____/|__|_|  (____  /__| (____  /";
+echo "        \/                 \/           \/          \/                         \/     \/          \/ ";
+echo
+}
+
+loader () {
+clear
+echo 
+credits
+sleep 1
+echo Starting..
+sleep 2
+clear
+}
+
+credits () {
+clear
+echo 
+echo Script created by: Jonathan Di Rico
+echo https://yonasuriv.github.io/
+echo
 }
 
 # Script Start
