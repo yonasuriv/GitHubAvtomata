@@ -143,9 +143,7 @@ git_clone () {
 clear
 logo
 echo "\033[1;37;40m Advanced GitHub Cloner \033[0m" 
-echo
-echo Starting...
-sleep 1
+cd ~/Documents
 echo For reference: https://github.com/USERNAME/REPOSITORY
 sleep 2
 echo
@@ -159,7 +157,6 @@ echo
 read repo
 echo
 echo "If the repository is succesfully created, it will be saved in: `pwd`"
-echo "Location can be changed by moving this script to the folder where do you want your repositories to be downloaded."
 echo
 git clone git@github.com:$username/$repo.git
 git_cloner_loop
