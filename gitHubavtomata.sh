@@ -116,7 +116,6 @@ logo
 echo "\033[1;37;40m Advanced GitHub Cloner \033[0m" 
 echo
 echo For reference: https://github.com/USERNAME/REPOSITORY
-sleep 2
 echo
 while true; do
 echo "\033[0;32m Enter the username that owns the repository: \033[0m"
