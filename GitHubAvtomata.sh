@@ -19,10 +19,10 @@ echo
 sleep 1
 echo Starting..
 sleep 2
-echo
+clear
 }
 
-credit () {
+credits () {
 clear
 echo 
 echo Script created by: Jonathan Di Rico
@@ -39,6 +39,7 @@ echo
 echo "  1) Terminal Credentials Configure"
 echo "  2) SSH Configure"
 echo "  3) Clone a repository"
+echo "  4) Exit"
 echo
 echo -n "Choose one of the above options: "
 }
@@ -50,6 +51,7 @@ case $selection in
   1) terminal_config ; menu_return;;
   2) ssh_config ; menu_return;;
   3) git_clone ; menu_return;;
+  4) credits;;
   *) incorrect_selection_number ; menu_return;;
 esac
 }
@@ -66,7 +68,7 @@ while true; do
             break
             ;;
         [nN]*)
-            credit
+            credits
             exit 1
             ;;
          *)
@@ -140,10 +142,12 @@ menu_return
 }
 
 git_clone () {
+mkdir -p ~/Web\ Servers/
+cd ~/Web\ Servers/
 clear
 logo
 echo "\033[1;37;40m Advanced GitHub Cloner \033[0m" 
-cd ~/Documents
+echo
 echo For reference: https://github.com/USERNAME/REPOSITORY
 sleep 2
 echo
@@ -207,7 +211,7 @@ incorrect_selection_letter() {
             ;;
         [nN]*)
             clear
-            credit
+            credits
             exit 1
             ;;
          *)
@@ -218,6 +222,8 @@ incorrect_selection_letter() {
 done
   echo
 }
+
+# Script Start
 
 clear
 loader
