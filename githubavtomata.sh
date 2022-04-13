@@ -15,8 +15,8 @@ main_menu  () {
 read selection
 echo
 case $selection in
-  1) terminal_config ; menu_return;;
-  2) ssh_config ; menu_return;;
+  1) terminal_config ; ssh_config_jump;;
+  2) ssh_config ; git_clone_jump;;
   3) git_clone ; menu_return;;
   4) credits;;
   *) incorrect_selection_number ; menu_return;;
@@ -73,6 +73,32 @@ git config --list
 echo
 }
 
+ssh_config_jump (){
+while true; do
+    read -p "Would you like to set an SSH key? [y/n] "  input
+    case $input in
+        [yY]*)
+            clear
+            logo 
+            ssh_config
+            break
+            ;;
+        [nN]*)
+            clear
+            logo
+            menu
+            main_menu
+            exit 1
+            ;;
+         *)
+            echo
+            incorrect_selection_letter
+            echo
+            main_menu
+    esac
+done
+}
+
 ssh_config () {
 clear
 logo
@@ -86,13 +112,14 @@ sleep 1
 echo 
 echo "\033[0;33m A file called 'id_rsa.pub will' be opened alongside with the web browser in the GitHub SSH Key Creation directory to create the key. \033[0m"
 sleep 2
+echo " Have in mind that the .pub file may take a few seconds longer to open depending on your computer specs."
+sleep 1
 echo
-echo Starting in a 5 seconds...
-sleep 5
+echo Starting in a 3 seconds...
+sleep 3
 echo
 echo "\033[0;33m Press [ENTER] to continue ONLY after you've done setting up your SSH key: \033[0m"
 sleep 3
-echo
 cd ~/.ssh/
 open id_rsa.pub
 sensible-browser https://github.com/settings/keys
@@ -105,7 +132,33 @@ echo Authenticating...
 echo
 ssh -T git@github.com
 echo
-menu_return
+git_clone_jump
+}
+
+git_clone_jump (){
+while true; do
+    read -p "Would you like to clone a repository? [y/n] "  input
+    case $input in
+        [yY]*)
+            clear
+            logo 
+            git_clone
+            break
+            ;;
+        [nN]*)
+            clear
+            logo
+            menu
+            main_menu
+            exit 1
+            ;;
+         *)
+            echo
+            incorrect_selection_letter
+            echo
+            main_menu
+    esac
+done
 }
 
 git_clone () {
