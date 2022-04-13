@@ -104,15 +104,16 @@ clear
 logo
 echo "\033[1;37;40m SSH Key Configuration \033[0m"
 echo
-echo "\033[0;33m Press [ENTER] when asked ANY imput to configure SSH correctly.\033[0m"
+echo "\033[0;30m Generating SSH Key...\033[0m"
 echo
 sleep 1
-ssh-keygen -t rsa -C "$email"
+yes "" | ssh-keygen -t rsa -C "diricojonathan@gmail.com"
 sleep 1
 echo 
-echo "\033[0;33m A file called 'id_rsa.pub will' be opened alongside with the web browser in the GitHub SSH Key Creation directory to create the key. \033[0m"
+echo
+echo "\033[0;32m A file called 'id_rsa.pub will' be opened alongside with the web browser in the GitHub SSH Key Creation directory to create the key. \033[0m"
 sleep 2
-echo " Have in mind that the .pub file may take a few seconds longer to open depending on your computer specs."
+echo "\033[0;32m Have in mind that the .pub file may take a few seconds longer to open depending on your computer specs. \033[0m"
 sleep 1
 echo
 echo Starting in a 3 seconds...
@@ -124,7 +125,7 @@ cd ~/.ssh/
 open id_rsa.pub
 sensible-browser https://github.com/settings/keys
 read enter_continue;
-echo "\033[0;33m Setting up host authenticator... \033[0m"
+echo "\033[0;30m Setting up host authenticator...\033[0m"
 sleep 1
 echo
 ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
