@@ -124,7 +124,7 @@ cd ~/.ssh/
 open id_rsa.pub
 sensible-browser https://github.com/settings/keys
 read enter_continue;
-echo "Setting up Host Autenthicator..."
+echo "\033[0;33m Setting up host authenticator... \033[0m"
 sleep 1
 echo
 ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
