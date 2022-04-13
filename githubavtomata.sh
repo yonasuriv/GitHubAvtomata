@@ -52,11 +52,11 @@ clear
 logo
 echo "\033[1;37;40m Terminal Credentials Configuration \033[0m"
 echo
-echo "\033[0;32m By what name should do you want to be recognized in the repositories?\033[0m"
+echo "\033[0;33m By what name should do you want to be recognized in the repositories?\033[0m"
 echo
 read name
 echo
-echo "\033[0;32m What's your email adress?\033[0m"
+echo "\033[0;33m What's your email adress?\033[0m"
 echo
 read email
 echo
@@ -66,7 +66,7 @@ git config --global color.ui true
 git config --global core.editor emacs
 git config --global color.ui true
 git config --global core.editor emacs
-echo Saving credentials..
+echo "\033[0;30m Saving credentials...\033[0m"
 sleep 1
 echo
 git config --list
@@ -129,10 +129,11 @@ echo "\033[0;30m Setting up host authenticator...\033[0m"
 sleep 1
 echo
 ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
-echo Authenticating...
 echo
+echo "\033[0;30m Authenticating...\033[0m"
+echo "\033[0;37m"
 ssh -T git@github.com
-echo
+echo "\033[0m"
 git_clone_jump
 }
 
@@ -172,15 +173,15 @@ echo
 echo For reference: https://github.com/USERNAME/REPOSITORY
 echo
 while true; do
-echo "\033[0;32m Enter the username that owns the repository: \033[0m"
+echo "\033[0;33m Enter the username that owns the repository: \033[0m \033[0m"
 echo
 read username
 echo
-echo "\033[0;32m Enter the repository name: \033[0m"
+echo "\033[0;33m Enter the repository name: \033[0m"
 echo
 read repo
 echo
-echo "If the repository is succesfully created, it will be saved in: `pwd`"
+echo "\033[0;32m If the repository is succesfully created, it will be saved in: `pwd`  \033[0m"
 echo
 git clone git@github.com:$username/$repo.git
 git_cloner_loop
