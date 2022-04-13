@@ -1,4 +1,5 @@
 #!/bin/bash
+. ./.shcss.sh
 
 menu () {
 echo "\033[1;37;40m Menu \033[0m"
