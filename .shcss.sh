@@ -15,6 +15,7 @@
 end="\033[0m"
 bold="\033[1m"
 underline="\033[4m"
+blink="\033[5m"
 negative="\033[7m"
 striket="\033[9m"
 grey="\033[0;30m"
