@@ -7,7 +7,7 @@
 ##
 ## - Importing color variables
 ## Copy the code below to the beggining of your script. (both files have to be in the same directory)
-## '. ./colors.sh'
+## '. ./shcss.sh'
 ##
 ## - Showing colors in the terminal before putting them in your Script
 ## Just uncomment the line of code at the end of this script and run 'sh colors.sh' in the terminal
