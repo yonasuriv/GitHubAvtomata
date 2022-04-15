@@ -53,11 +53,11 @@ clear
 logo
 echo "$greybgwhite Terminal Credentials Configuration $end"
 echo
-echo "$yellow  By what name should do you want to be recognized in the repositories? $end"
+echo "$purple  By what name should do you want to be recognized in the repositories? $end"
 echo
 read name
 echo
-echo "$yellow What's your email adress? $end"
+echo "$purple What's your email adress? $end"
 echo
 read email
 echo
@@ -174,11 +174,11 @@ echo
 echo "$grey For reference: https://github.com/USERNAME/REPOSITORY $end"
 echo
 while true; do
-echo "$yellow Enter the username that owns the repository: $end"
+echo "$purple Enter the username that owns the repository: $end"
 echo
 read username
 echo
-echo "$yellow Enter the repository name: $end"
+echo "$purple Enter the repository name: $end"
 echo
 read repo
 echo
@@ -246,12 +246,14 @@ done
 }
 
 logo () {
-echo "$green  ________.__  __     ___ ___      ___.        _____          __                         __          ";
-echo " /  _____/|__|/  |_  /   |   \ __ _\_ |__     /  _  \___  ___/  |_  ____   _____ _____ _/  |______   ";
-echo "/   \  ___|  \   __\/    ~    \  |  \ __ \   /  /_\  \  \/ /\   __\/  _ \ /     \\__  \\   __\__  \  ";
-echo "\    \_\  \  ||  |  \    Y    /  |  / \_\ \ /    |    \   /  |  | (  <_> )  Y Y  \/ __ \|  |  / __ \_";
-echo " \______  /__||__|   \___|_  /|____/|___  / \____|__  /\_/   |__|  \____/|__|_|  (____  /__| (____  /";
-echo "        \/                 \/           \/          \/                         \/     \/          \/ $end";
+echo """$cyan
+  ██████╗ ██╗████████╗██╗  ██╗██╗   ██╗██████╗      █████╗ ██╗   ██╗████████╗ ██████╗ ███╗   ███╗ █████╗ ████████╗ █████╗ 
+ ██╔════╝ ██║╚══██╔══╝██║  ██║██║   ██║██╔══██╗    ██╔══██╗██║   ██║╚══██╔══╝██╔═══██╗████╗ ████║██╔══██╗╚══██╔══╝██╔══██╗
+ ██║  ███╗██║   ██║   ███████║██║   ██║██████╔╝    ███████║██║   ██║   ██║   ██║   ██║██╔████╔██║███████║   ██║   ███████║
+ ██║   ██║██║   ██║   ██╔══██║██║   ██║██╔══██╗    ██╔══██║╚██╗ ██╔╝   ██║   ██║   ██║██║╚██╔╝██║██╔══██║   ██║   ██╔══██║
+ ╚██████╔╝██║   ██║   ██║  ██║╚██████╔╝██████╔╝    ██║  ██║ ╚████╔╝    ██║   ╚██████╔╝██║ ╚═╝ ██║██║  ██║   ██║   ██║  ██║
+  ╚═════╝ ╚═╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝ ╚═════╝     ╚═╝  ╚═╝  ╚═══╝     ╚═╝    ╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝   ╚═╝   ╚═╝  ╚═╝
+$end"""
 echo
 }
 
