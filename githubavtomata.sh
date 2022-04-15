@@ -53,11 +53,11 @@ clear
 logo
 echo "$greybgwhite Terminal Credentials Configuration $end"
 echo
-echo "$purple  By what name should do you want to be recognized in the repositories? $end"
+echo "$purple2 Enter your name with which you want to be recognized: $end"
 echo
 read name
 echo
-echo "$purple What's your email adress? $end"
+echo "$purple2 Enter your email address: $end"
 echo
 read email
 echo
@@ -174,11 +174,11 @@ echo
 echo "$grey For reference: https://github.com/USERNAME/REPOSITORY $end"
 echo
 while true; do
-echo "$purple Enter the username that owns the repository: $end"
+echo "$purple2 Enter the username that owns the repository: $end"
 echo
 read username
 echo
-echo "$purple Enter the repository name: $end"
+echo "$purple2 Enter the repository name: $end"
 echo
 read repo
 echo
