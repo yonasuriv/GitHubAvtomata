@@ -165,8 +165,8 @@ done
 }
 
 git_clone () {
-mkdir -p ~/Web\ Servers/
-cd ~/Web\ Servers/
+mkdir -p ~/Projects/Git/
+cd ~/Projects/Git/
 clear
 logo
 echo "$greybgwhite Advanced GitHub Cloner $end" 
