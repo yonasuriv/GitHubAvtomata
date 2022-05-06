@@ -1,7 +1,7 @@
 # GitHub Avtomata
 
 ### Installation
-Simply download the file: **githubavtomata.sh** and run it on the terminal using:
+Simply download the file **githubavtomata.sh** and run it on the terminal using:
 
 ```sh githubavtomata.sh```
 
