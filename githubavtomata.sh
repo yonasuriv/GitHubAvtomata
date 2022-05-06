@@ -271,7 +271,7 @@ credits () {
 clear
 echo 
 echo Script created by: Jonathan Di Rico
-echo https://yonasuriv.github.io/
+echo https://www.yonasuriv.com/
 echo
 }
 
