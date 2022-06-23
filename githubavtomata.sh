@@ -112,7 +112,7 @@ yes "" | ssh-keygen -t rsa -C "diricojonathan@gmail.com"
 sleep 1
 echo 
 echo
-echo "$green2 A file called 'id_rsa.pub will' be opened alongside with the web browser in the GitHub SSH Key Creation directory to create the key. $end"
+echo "$green2 A file called 'id_rsa.pub will' be opened alongside with the web browser in the GitHub SSH Key Creation directory. $end"
 sleep 2
 echo "$green2 Have in mind that the .pub file may take a few seconds longer to open depending on your computer specs. $end"
 sleep 1
@@ -124,7 +124,7 @@ echo "$green Press [ENTER] to continue ONLY after you've done setting up your SS
 sleep 3
 cd ~/.ssh/
 open id_rsa.pub
-sensible-browser https://github.com/settings/keys
+xdg-open https://github.com/settings/keys
 read enter_continue;
 echo "$grey Setting up host authenticator...$end"
 sleep 1
