@@ -1,0 +1,23 @@
+# Release cycle
+stage=""
+
+# N.X.X
+majorVersion="1"
+
+# X.N.X
+minorVersion="19"
+
+# X.X.N
+patchVersion="26"
+
+# Version Number
+versionNumber="1.19.0"
+
+# Version Scheme
+version="1.19.0"
+
+# Notes regarding the specific version
+notes="Minor update: New features and improvements added in a backward-compatible manner"
+
+# Last stable commit ID
+stablecid=""
