@@ -8,13 +8,13 @@ majorVersion="1"
 minorVersion="18"
 
 # X.X.N
-patchVersion="25"
+patchVersion="26"
 
 # Version Number
-versionNumber="1.18.25"
+versionNumber="1.18.26"
 
 # Version Scheme
-version="1.18.25"
+version="1.18.26"
 
 # Notes regarding the specific version
 notes="Bug fixes and stability improvements"
