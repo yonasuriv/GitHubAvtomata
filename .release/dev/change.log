@@ -1,0 +1,23 @@
+# Release cycle
+stage=""
+
+# N.X.X
+majorVersion="1"
+
+# X.N.X
+minorVersion="18"
+
+# X.X.N
+patchVersion="25"
+
+# Version Number
+versionNumber="1.18.25"
+
+# Version Scheme
+version="1.18.25"
+
+# Notes regarding the specific version
+notes="Bug fixes and stability improvements"
+
+# Last stable commit ID
+stablecid=""
