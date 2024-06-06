@@ -5,16 +5,16 @@ stage=""
 majorVersion="1"
 
 # X.N.X
-minorVersion="20"
+minorVersion="21"
 
 # X.X.N
 patchVersion="26"
 
 # Version Number
-versionNumber="1.20.0"
+versionNumber="1.21.0"
 
 # Version Scheme
-version="1.20.0"
+version="1.21.0"
 
 # Notes regarding the specific version
 notes="Minor update: New features and improvements added in a backward-compatible manner"
