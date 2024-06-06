@@ -1,0 +1,23 @@
+# Release cycle
+stage="dev"
+
+# N.X.X
+majorVersion="1"
+
+# X.N.X
+minorVersion="18"
+
+# X.X.N
+patchVersion="24"
+
+# Version Number
+versionNumber="1.18.24"
+
+# Version Scheme
+version="v1.0.0-release"
+
+# Notes regarding the specific version
+notes="nmap module added."
+
+# Last stable commit ID
+stablecid=""
